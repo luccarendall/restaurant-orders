@@ -17,11 +17,8 @@ def test_ingredient():
 
     assert hash(ingredient_one) == hash(ingredient_two)
     assert hash(ingredient_one) != hash(ingredient_three)
-    assert hash(ingredient_one) != hash(ingredient_three)
-    assert hash(ingredient_one) == hash(ingredient_two)
 
     assert repr(ingredient_three) == "Ingredient('manteiga')"
-    assert repr(ingredient_three) == "Ingredient('farinha')"
     assert repr(ingredient_two) == "Ingredient('farinha')"
 
     assert ingredient_three.restrictions == {
