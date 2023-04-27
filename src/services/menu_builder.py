@@ -55,7 +55,7 @@ class MenuBuilder:
             recipe_info["dish_name"] = dish.name
             recipe_info["ingredients"] = dish.get_ingredients()
             recipe_info["price"] = dish.price
-            recipe_info["restrictions"] = dish.restrictions
+            # recipe_info["restrictions"] = dish.restrictions
             data.append(recipe_info)
 
         data_dish = pd.DataFrame(data)
